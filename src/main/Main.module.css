@@ -3,17 +3,6 @@
     background-color: pink;
 }
 
-.container{
-    border: 1px solid;
-    height: 100%;
-    width: 80%;
-    margin: 0 auto;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-
-}
-
 .text{
     width: 300px;
     background-color: #f4f5ff;
