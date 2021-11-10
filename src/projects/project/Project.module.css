@@ -1,0 +1,27 @@
+.project{
+    width: 350px;
+    border: 1px solid;
+    display: flex;
+    flex-direction: column;
+}
+
+.imgContainer{
+    height: 200px;
+    width: 100%;
+    background-image: url("https://m.buro247.ru/images/andreeva/670-830-hello-kitty-Untitled-2.jpg");
+    background-size: cover;
+    background-position: center;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.title{
+    background-color: rgba(122,117,121,0.58);
+    margin: 5px;
+}
+.description{
+    background-color: rgba(122,117,121,0.58);
+    margin: 5px;
+}
