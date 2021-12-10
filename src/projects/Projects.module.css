@@ -1,6 +1,6 @@
 .projectsBlock{
     min-height: 100vh;
-    background-color: #e399f5;
+    background-color: #1f1f20;
 }
 
 .projectsContainer {
@@ -9,7 +9,30 @@
 }
 
 .title{
-    background-color: #f4f5ff;
+    margin: 0 0 30px;
+    font-family:'Josefin Sans', sans-serif;
+    font-weight: 300;
+    color: #fff;
+    text-transform: capitalize;
+    font-size: 36px;
+    line-height: 1.2;
+    letter-spacing: 5px;
+    position: relative;
+}
+.title h2{
+    margin: 0;
+    font-weight: 400;
+}
+.title::before{
+    content: '';
+    position: absolute;
+    background: #4e93e6;
+    width: 55px;
+    height: 1px;
+    bottom: -30px;
+    left: 50%;
+    transform: translate(-50%,50%);
+
 }
 
 .projects {
@@ -18,4 +41,10 @@
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+}
+
+@media screen and (max-width: 879px){
+    .projects {
+        justify-content: center;
+    }
 }

@@ -11,8 +11,8 @@ export const Contacts = () =>{
                     <input className={style.input}/>
                     <input className={style.input}/>
                     <textarea cols="30" rows="10"></textarea>
+                    <button type="submit">Отправить</button>
                 </form>
-                <button>Отправить</button>
             </div>
         </div>
     )

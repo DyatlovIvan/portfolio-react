@@ -20,9 +20,8 @@
     flex-direction: column;
     justify-content: space-between;
     margin-bottom: 10px;
-
 }
 
-.input {
-
+.contactBox inputm .contactBox textarea {
+    width: 100%;
 }

@@ -9,7 +9,7 @@ export const Project = (props) => {
             </div>
 
 
-                <div className={style.title}>{props.title}</div>
+                <h3 className={style.title}>{props.title}</h3>
                 <span className={style.description}>{props.description}</span>
 
         </div>
