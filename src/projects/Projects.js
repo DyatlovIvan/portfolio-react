@@ -10,7 +10,7 @@ export const Projects =()=>{
         backgroundImage: `url(${socialNetworkImage})`,
     }
     const todolist = {
-        todolistImage: `url(${todolistImage})`,
+        backgroundImage: `url(${todolistImage})`,
     }
     return(
         <div className={style.projectsBlock}>
