@@ -4,13 +4,14 @@ import React from "react";
 export const Project = (props) => {
     return (
         <div className={style.project}>
-            <div className={style.imgContainer}>
-                    <a>Посмотреть</a>
+            <div className={style.imgContainer} style={props.style}>
+                <a>Посмотреть</a>
             </div>
 
-
-                <h3 className={style.title}>{props.title}</h3>
+            <div className={style.projectInfo}>
+                <h3 className={style.projectTitle}>{props.projectTitle}</h3>
                 <span className={style.description}>{props.description}</span>
+            </div>
 
         </div>
     )
