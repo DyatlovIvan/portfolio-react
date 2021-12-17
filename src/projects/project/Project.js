@@ -1,11 +1,11 @@
-import style from './Project.module.css'
+import style from './Project.module.scss'
 import React from "react";
 
 export const Project = (props) => {
     return (
         <div className={style.project}>
             <div className={style.imgContainer} style={props.style}>
-                <a>Посмотреть</a>
+                <a href={''} className={style.viewBtn}>View</a>
             </div>
 
             <div className={style.projectInfo}>
