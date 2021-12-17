@@ -42,7 +42,7 @@
     padding: 25px 20px;
 
     .projectTitle {
-      @include text($primaryFont,20px,1.2);
+      @include text($primaryFont,30px,1.2);
       text-transform: capitalize;
       letter-spacing: 1px;
       margin: 0 0 5px;

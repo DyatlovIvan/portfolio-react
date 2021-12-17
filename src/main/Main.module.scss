@@ -1,0 +1,22 @@
+@import "../common/styles/sass/variables";
+.mainBlock{
+    height: 100vh;
+    background-color:$bgColor;
+
+    .text{
+        width: 300px;
+        background-color: #f4f5ff;
+    }
+    .photo{
+        width: 300px;
+        height: 400px;
+        background-color: #f4f5ff;
+    }
+    @media screen and (max-width: 651px) {
+        justify-content: center;
+    }
+
+}
+
+
+
