@@ -1,6 +1,7 @@
+@import "../common/styles/sass/variables";
 .header{
     height: 80px;
-    background-color: #8fb0ff;
+    background-color: $bgSecondColor;
     display: flex;
     justify-content: flex-end;
     align-items: center;

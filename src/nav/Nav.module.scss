@@ -1,0 +1,16 @@
+@import "../common/styles/sass/variables";
+@import "../common/styles/sass/mixins";
+.nav{
+    width: 300px;
+    display: flex;
+    justify-content: flex-end;
+    justify-content: space-between;
+    margin-right: 100px;
+
+}
+.navText{
+    color: $textColor;
+    @include text($secondFont,17px,0);
+    text-decoration: none;
+}
+
