@@ -1,16 +1,28 @@
 @import "../common/styles/sass/variables";
+@import "../common/styles/sass/mixins";
 .mainBlock{
     height: 100vh;
     background-color:$bgColor;
 
     .text{
-        width: 300px;
-        background-color: #f4f5ff;
+
+        .discription{
+            color: $textColor;
+            @include text($secondFont,40px,1);
+        }
+        .textName{
+            color: $textColor;
+            @include text($primaryFont,90px,1.5);
+        }
     }
+
     .photo{
-        width: 300px;
-        height: 400px;
-        background-color: #f4f5ff;
+        width: 400px;
+        height: 500px;
+        background-color: $bgSecondColor;
+        background-size: cover;
+        background-position: center;
+
     }
     @media screen and (max-width: 651px) {
         justify-content: center;
