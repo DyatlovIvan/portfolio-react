@@ -1,0 +1,32 @@
+@import "../common/styles/sass/variables";
+@import "../common/styles/sass/mixins";
+
+
+.footerBlock{
+    background-color: $bgColor;
+
+    .footerContainer{
+        flex-direction: column;
+        justify-content: space-between;
+
+        .title{
+           color: $textColor;
+            @include text($primaryFont,30px,1.5);
+        }
+
+        .footerItems{
+            width: 280px;
+            display: flex;
+            flex-direction: row;
+            justify-content:space-between ;
+            flex-wrap: wrap;
+        }
+        .comment{
+            color: $textColor;
+            @include text($secondFont,12px,5);
+        }
+    }
+}
+
+
+

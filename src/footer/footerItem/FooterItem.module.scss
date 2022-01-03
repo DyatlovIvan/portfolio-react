@@ -1,0 +1,7 @@
+@import "../../common/styles/sass/variables";
+@import "../../common/styles/sass/mixins";
+.item{
+    height: 60px;
+    width: 60px;
+    background-color: $textColor;
+}

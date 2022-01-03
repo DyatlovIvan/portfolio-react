@@ -17,8 +17,8 @@ export const Projects =()=>{
             <div className={`${styleContainer.container} ${style.projectsContainer}`}>
                <Title title ={'Projects'}/>
                 <div className={style.projects}>
-                    <Project style = {todolist} projectTitle = 'todo list' description = 'bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla'/>
-                    <Project style = {socialNetwork} projectTitle = 'social network' description = 'bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla'/>
+                    <Project style = {todolist} projectTitle = 'todo list' description = 'A web service for managing tasks. Tasks can be placed into projects, sorted by filter, assigned labels, edited.'/>
+                    <Project style = {socialNetwork} projectTitle = 'social network' description = 'An online platform that is used for communication, dating, creating social relationships between people.'/>
                 </div>
             </div>
         </div>

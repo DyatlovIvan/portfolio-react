@@ -35,6 +35,7 @@
       padding: 10px 20px;
       position: relative;
       z-index: 1;
+      text-decoration: none;
     }
   }
 
@@ -51,7 +52,7 @@
     .description {
       @include text($secondFont,12px,1.8);
       font-weight: 400;
-      text-transform: capitalize;
+      //text-transform: capitalize;
     }
   }
 }

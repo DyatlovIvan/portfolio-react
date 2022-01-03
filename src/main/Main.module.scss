@@ -9,6 +9,11 @@
         .discription{
             color: $textColor;
             @include text($secondFont,40px,1);
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            align-items: flex-start;
         }
         .textName{
             color: $textColor;
@@ -22,6 +27,10 @@
         background-color: $bgSecondColor;
         background-size: cover;
         background-position: center;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        align-items: flex-start;
 
     }
     @media screen and (max-width: 651px) {

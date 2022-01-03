@@ -5,5 +5,8 @@
     display: flex;
     justify-content: flex-end;
     align-items: center;
+    @media screen and (max-width: 879px) {
+        justify-content: center;
+    }
 
 }

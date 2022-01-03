@@ -1,6 +1,9 @@
+@import "../common/styles/sass/variables";
+@import "../common/styles/sass/mixins";
 .contactsBlock {
-    height: 100vh;
-    background-color: #ffe8a2;
+    /*height: 100vh;*/
+    height: 100%;
+    background-color: $bgSecondColor;
 }
 
 .title{
@@ -10,6 +13,7 @@
     border: 1px solid;
     flex-direction: column;
     justify-content: flex-start;
+
 }
 
 .contactBox {
