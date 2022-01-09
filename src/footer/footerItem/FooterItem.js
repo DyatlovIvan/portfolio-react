@@ -1,6 +1,12 @@
 import style from './FooterItem.module.scss'
-export const FooterItem = ()=>{
+export const FooterItem = (props)=>{
     return(
-        <div className={style.item}></div>
+        <a
+            href={props.style.url}
+            target="_blank"
+            style = {props.style}
+            className={style.item}>
+
+        </a>
     )
 }

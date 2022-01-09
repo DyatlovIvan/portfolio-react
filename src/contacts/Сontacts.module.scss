@@ -4,28 +4,28 @@
     /*height: 100vh;*/
     height: 100%;
     background-color: $bgSecondColor;
+
+    .contactsContainer {
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+
+    .contactBox {
+        width: 280px;
+        height: 210px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        margin-bottom: 10px;
+
+        .contactBox input .contactBox textarea {
+            width: 100%;
+        }
+    }
 }
 
-.title{
-    background-color: #ececea;
-}
-.contactsContainer {
-    border: 1px solid;
-    flex-direction: column;
-    justify-content: flex-start;
 
-}
 
-.contactBox {
-    border: 1px solid;
-    width: 280px;
-    height: 210px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    margin-bottom: 10px;
-}
 
-.contactBox inputm .contactBox textarea {
-    width: 100%;
-}
+
+
