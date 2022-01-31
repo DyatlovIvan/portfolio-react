@@ -1,27 +1,72 @@
 @import "../common/styles/sass/variables";
 @import "../common/styles/sass/mixins";
+@import "../common/components/button/Button.module";
+
 .contactsBlock {
-    /*height: 100vh;*/
-    height: 100%;
-    background-color: $bgSecondColor;
-
-    .contactsContainer {
-        flex-direction: column;
-        justify-content: flex-start;
+  padding: 100px 0;
+  background-color: $bgSecondColor;
+  .container {
+    @include container();
+    width: 540px;
+    margin-top: 60px;
+    text-align: center;
+    @media screen and (max-width: 680px) {
+      width: 100%;
     }
 
-    .contactBox {
-        width: 280px;
-        height: 210px;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        margin-bottom: 10px;
+    .formArea,
+    .messageArea {
+      width: 400px;
+      background: $bgSecondColor;
+      border: 1px solid #4a4a4a;
+      box-sizing: border-box;
+      @include text($textColor, 12px, 1.5);
+      outline: none;
+      color: $textColor;
+      margin-bottom: 1.2rem;
 
-        .contactBox input .contactBox textarea {
-            width: 100%;
+      &:-webkit-autofill {
+        border: 1px solid #4a4a4a;
+        -webkit-text-fill-color: #495057;
+        -webkit-box-shadow: 0 0 0 1000px #252527 inset;
+        transition: background-color 5000s ease-in-out 0s;
+
+        &:focus {
+          border: 2px solid $bgSecondColor;
         }
+      }
     }
+
+    .formArea {
+      height: calc(1.5em + .75rem + 2px);
+      padding: .4rem 15px;
+
+      &:focus {
+        border: 1px solid transparent;
+        transition: all 0.4s ease-in-out 0s;
+      }
+    }
+
+    .messageArea {
+      min-height: 150px;
+      padding: 15px;
+      resize: none;
+
+      &:focus {
+        border: 1px solid transparent;
+        transition: all 0.4s ease-in-out 0s;
+      }
+    }
+
+    button[type='submit'] {
+      @extend .btn;
+      align-self: center;
+      background-color: transparent;
+      margin-top: 30px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
 }
 
 

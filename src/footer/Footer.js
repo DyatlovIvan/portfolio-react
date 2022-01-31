@@ -19,7 +19,7 @@ export const Footer = () =>{
     }
      const github = {
         backgroundImage: `url(${githubImg})`,
-         url: 'https://streamdetails.com/'
+         url: 'https://github.com/DyatlovIvan'
 
     }
      const codeWars = {

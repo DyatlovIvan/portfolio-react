@@ -2,17 +2,46 @@ import  style from './Skills.module.scss'
 import styleContainer from '../common/styles/Container.module.css'
 import {Skill} from "./skill/Skill";
 import {Title} from "../common/components/title/Title";
+import JSLogo from '../assets/image/javascript.svg'
+import CSSLogo from '../assets/image/CSS3.svg'
+import HTMLLogo from '../assets/image/html.svg'
+import ReactLogo from '../assets/image/react.svg'
+import ReduxLogo from '../assets/image/redux.svg'
+import TSLogo from '../assets/image/Typescript.svg'
+
+
 
 export  const Skills = ()=>{
+    const JSImg = {
+        backgroundImage: `url(${JSLogo})`,
+    }
+    const CSSImg = {
+        backgroundImage: `url(${CSSLogo})`,
+    }
+    const HTMLImg = {
+        backgroundImage: `url(${HTMLLogo})`,
+    }
+    const ReactImg = {
+        backgroundImage: `url(${ReactLogo})`,
+    }
+    const ReduxImg = {
+        backgroundImage: `url(${ReduxLogo})`,
+    }
+    const TSImg = {
+        backgroundImage: `url(${TSLogo})`,
+    }
     return(
         <div className={style.skillsBlock}>
             <div className={`${styleContainer.container} ${style.skillsContainer}`}>
                 <Title title={'Skills'}/>
                 <div className={style.skills}>
-                    <Skill title = {'JS'} description = {'blabla blab lablablab lablab  lablab labla bla bla blab la'}/>
-                    <Skill title = {'Css'} description = {'bl abl ab labl ablab lab lab la bla blabl abla'}/>
-                    <Skill title = {'React'} description = {'blablablabla blablab labla blabl abla bla'}/>
-                    <Skill title = {'Redux'} description = {'fd dfdf fd fd dfd df df dfdfdfd blablablabla blablab labla blabl abla bla'}/>
+                    <Skill title = {'React'} logo = {ReactImg} />
+                    <Skill title = {'Redux'} logo = {ReduxImg} />
+                    <Skill title = {'TS'} logo = {TSImg} />
+                    <Skill title = {'HTML'} logo = {HTMLImg}  />
+                    <Skill title = {'JS'} logo = {JSImg}/>
+                    <Skill title = {'CSS'} logo = {CSSImg} />
+
                 </div>
             </div>
         </div>

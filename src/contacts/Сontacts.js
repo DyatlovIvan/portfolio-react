@@ -6,16 +6,20 @@ import {Title} from "../common/components/title/Title";
 export const Contacts = () => {
     return (
         <div className={style.contactsBlock}>
-            <div className={`${styleContainer.container} ${style.contactsContainer}`}>
-                <div>
-                    <Title title={'Сontacts'}/>
-                    <form className={style.contactBox}>
-                        <input className={style.input}/>
-                        <input className={style.input}/>
-                        <textarea cols="30" rows="10"></textarea>
-                        <button type="submit">Отправить</button>
-                    </form>
-                </div>
+            <div className={style.container}>
+                <Title title={'Сontacts'}/>
+                <form className={style.form}>
+                    <div>
+                        <input type={'text'} className={style.formArea} placeholder={'name'}/>
+                    </div>
+                    <div>
+                        <input type={'text'} className={style.formArea} placeholder={'e-mail'}/>
+                    </div>
+
+
+                    <textarea className={style.messageArea} placeholder={'message'}/>
+                    <button type="submit">Send message</button>
+                </form>
             </div>
         </div>
     )
