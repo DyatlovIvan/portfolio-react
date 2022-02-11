@@ -38,8 +38,8 @@ export  const Skills = ()=>{
                     <Skill title = {'React'} logo = {ReactImg} />
                     <Skill title = {'Redux'} logo = {ReduxImg} />
                     <Skill title = {'TS'} logo = {TSImg} />
-                    <Skill title = {'HTML'} logo = {HTMLImg}  />
                     <Skill title = {'JS'} logo = {JSImg}/>
+                    <Skill title = {'HTML'} logo = {HTMLImg}  />
                     <Skill title = {'CSS'} logo = {CSSImg} />
 
                 </div>

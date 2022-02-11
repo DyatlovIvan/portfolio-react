@@ -10,17 +10,10 @@
     padding: 20px;
     box-sizing: border-box;
     .icon{
-        //width:120px;
-        //height: 120px;
-        //background-color: $primaryColor;
         height: 110px;
         width: 120px;
-        background-size: cover;
-        background-position: center;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        position: relative;
+        background: no-repeat center;
+        background-size: contain;
         border-radius: 5px;
     }
     .skillTitle{
