@@ -19,8 +19,7 @@ export const Contacts = () => {
             message: ''
         },
         onSubmit: values => {
-            debugger
-            axios.post('http://localhost:3010/sendMessage',{
+            axios.post('https://smpt-nodejs-server1.herokuapp.com/sendMessage',{
                 name: values.name,
                 email: values.email,
                 message: values.message
