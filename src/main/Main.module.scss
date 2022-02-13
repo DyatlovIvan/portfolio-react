@@ -3,17 +3,24 @@
 .mainBlock{
     height: 100vh;
     background-color:$bgColor;
+    .particles {
+        position: absolute;
+        height: 150%;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        opacity: 0.5;
+
+
+    }
 
     .text{
 
-        .discription{
+        .description{
             color: $textColor;
-            @include text($secondFont,40px,1);
+            @include text($secondFont,50px,1);
             width: 100%;
-            display: flex;
-            justify-content: space-between;
-            flex-wrap: wrap;
-            align-items: flex-start;
         }
         .textName{
             color: $textColor;
@@ -22,7 +29,7 @@
     }
 
     .photo{
-        width: 400px;
+        width: 500px;
         height: 500px;
         background-color: $bgSecondColor;
         background-size: cover;
@@ -31,20 +38,14 @@
         justify-content: space-between;
         flex-wrap: wrap;
         align-items: flex-start;
+        border-radius: 500px;
 
     }
     @media screen and (max-width: 651px) {
         justify-content: center;
     }
 }
-.particles{
-    position: absolute;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    opacity: 0.3;
-}
+
 
 
 

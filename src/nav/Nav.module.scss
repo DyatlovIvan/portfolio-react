@@ -2,10 +2,18 @@
 @import "../common/styles/sass/mixins";
 .nav{
     width: 300px;
-    display: flex;
-    justify-content: flex-end;
-    justify-content: space-between;
-    margin-right: 100px;
+    @include  flex(row,space-between,stretch,nowrap);
+    color: $textColor;
+    cursor: pointer;
+    margin-right: 30px;
+    :hover{
+        text-decoration: none;
+        color: $primaryColor;
+    }
+
+    .active{
+        color: $primaryColor;
+    }
 
 }
 .navText{

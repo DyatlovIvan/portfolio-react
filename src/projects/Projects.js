@@ -13,7 +13,7 @@ export const Projects =()=>{
         backgroundImage: `url(${todolistImage})`,
     }
     return(
-        <div className={style.projectsBlock}>
+        <div id = 'projects' className={style.projectsBlock}>
             <div className={`${styleContainer.container} ${style.projectsContainer}`}>
                <Title title ={'Projects'}/>
                 <div className={style.projects}>

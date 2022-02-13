@@ -1,4 +1,4 @@
-import styleContainer from "../common/styles/Container.module.css";
+
 import style from './Сontacts.module.scss'
 import {Title} from "../common/components/title/Title";
 import axios from "axios";
@@ -6,12 +6,7 @@ import {useFormik} from "formik";
 
 
 export const Contacts = () => {
-    // const onClickHandler = (e) =>{
-    //
-    //
-    //     axios.post('http:localhost:3010/sendMessage')
-    //     debugger
-    // }
+
     const formik = useFormik({
         initialValues: {
             name: '',
@@ -33,7 +28,7 @@ export const Contacts = () => {
     }
 
     return (
-        <div className={style.contactsBlock}>
+        <div id = 'contacts' className={style.contactsBlock}>
             <div className={style.container}>
                 <Title title={'Сontacts'}/>
                 <form onSubmit={formik.handleSubmit} className={style.form}>

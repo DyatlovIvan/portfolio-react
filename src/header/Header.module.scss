@@ -1,5 +1,9 @@
 @import "../common/styles/sass/variables";
 .header{
+    position: fixed;
+    width: 100%;
+    z-index: 10;
+    opacity: 0.9;
     height: 80px;
     background-color: $bgSecondColor;
     display: flex;
