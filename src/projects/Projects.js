@@ -6,6 +6,7 @@ import socialNetworkImage from '../assets/image/socialNetwork.jpg'
 import todolistImage from '../assets/image/todolistImage.jpg'
 import Fade from 'react-reveal/Fade';
 
+
 export const Projects = () => {
     const socialNetwork = {
         backgroundImage: `url(${socialNetworkImage})`,
@@ -23,6 +24,7 @@ export const Projects = () => {
                                  url = {'https://dyatlovivan.github.io/todoList/#/login'}
                                  description='A web service for managing tasks. Tasks can be placed into projects, sorted by filter, assigned labels, edited.'/>
                         <Project style={socialNetwork} projectTitle='social network'
+                                 url = {'https://dyatlovivan.github.io/socialnetwork/#/login'}
                                  description='An online platform that is used for communication, dating, creating social relationships between people.'/>
                     </div>
                 </Fade>

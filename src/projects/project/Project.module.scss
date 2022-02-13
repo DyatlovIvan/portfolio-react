@@ -3,7 +3,6 @@
 
 .project {
   width: 600px;
-  /*border: 1px solid;*/
   display: flex;
   flex-direction: column;
   background-color: $bgSecondColor;
@@ -17,6 +16,7 @@
     justify-content: center;
     align-items: center;
     position: relative;
+
 
     &::before {
       position: absolute;
