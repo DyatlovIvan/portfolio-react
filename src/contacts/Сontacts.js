@@ -1,8 +1,8 @@
-
 import style from './Сontacts.module.scss'
 import {Title} from "../common/components/title/Title";
 import axios from "axios";
 import {useFormik} from "formik";
+import Fade from 'react-reveal/Fade';
 
 
 export const Contacts = () => {
@@ -31,6 +31,7 @@ export const Contacts = () => {
         <div id = 'contacts' className={style.contactsBlock}>
             <div className={style.container}>
                 <Title title={'Сontacts'}/>
+                <Fade left>
                 <form onSubmit={formik.handleSubmit} className={style.form}>
                     <div>
                         <input id={'name'}
@@ -61,6 +62,7 @@ export const Contacts = () => {
                                placeholder={'message'} />
                     <button type="submit">Send message</button>
                 </form>
+                </Fade>
             </div>
         </div>
     )

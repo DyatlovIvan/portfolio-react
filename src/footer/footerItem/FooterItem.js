@@ -1,4 +1,6 @@
 import style from './FooterItem.module.scss'
+import Fade from 'react-reveal/Fade';
+
 export const FooterItem = (props)=>{
     return(
         <a

@@ -1,4 +1,4 @@
-import  style from './Skills.module.scss'
+import style from './Skills.module.scss'
 import styleContainer from '../common/styles/Container.module.css'
 import {Skill} from "./skill/Skill";
 import {Title} from "../common/components/title/Title";
@@ -8,10 +8,10 @@ import HTMLLogo from '../assets/image/html.svg'
 import ReactLogo from '../assets/image/react.svg'
 import ReduxLogo from '../assets/image/redux.svg'
 import TSLogo from '../assets/image/Typescript.svg'
+import Fade from 'react-reveal/Fade';
 
 
-
-export  const Skills = ()=>{
+export const Skills = () => {
     const JSImg = {
         backgroundImage: `url(${JSLogo})`,
     }
@@ -30,19 +30,20 @@ export  const Skills = ()=>{
     const TSImg = {
         backgroundImage: `url(${TSLogo})`,
     }
-    return(
+    return (
         <div className={style.skillsBlock}>
             <div className={`${styleContainer.container} ${style.skillsContainer}`}>
                 <Title title={'Skills'}/>
-                <div className={style.skills}>
-                    <Skill title = {'React'} logo = {ReactImg} />
-                    <Skill title = {'Redux'} logo = {ReduxImg} />
-                    <Skill title = {'TS'} logo = {TSImg} />
-                    <Skill title = {'JS'} logo = {JSImg}/>
-                    <Skill title = {'HTML'} logo = {HTMLImg}  />
-                    <Skill title = {'CSS'} logo = {CSSImg} />
-
-                </div>
+                <Fade bottom>
+                    <div className={style.skills}>
+                        <Skill title={'React'} logo={ReactImg}/>
+                        <Skill title={'Redux'} logo={ReduxImg}/>
+                        <Skill title={'TS'} logo={TSImg}/>
+                        <Skill title={'JS'} logo={JSImg}/>
+                        <Skill title={'HTML'} logo={HTMLImg}/>
+                        <Skill title={'CSS'} logo={CSSImg}/>
+                    </div>
+                </Fade>
             </div>
         </div>
     )
