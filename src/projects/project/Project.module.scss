@@ -10,7 +10,8 @@
   .imgContainer {
     height: 350px;
     width: 100%;
-    background-size: cover;
+    background-size: contain;
+    background-repeat: no-repeat;
     background-position: center;
     display: flex;
     justify-content: center;

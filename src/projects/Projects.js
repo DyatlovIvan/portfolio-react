@@ -2,8 +2,8 @@ import style from './Projects.module.scss'
 import styleContainer from '../common/styles/Container.module.css'
 import {Project} from "./project/Project";
 import {Title} from "../common/components/title/Title";
-import socialNetworkImage from '../assets/image/socialNetwork.jpg'
-import todolistImage from '../assets/image/todolistImage.jpg'
+import socialNetworkImage from '../assets/image/socialnetwork.png'
+import todolistImage from '../assets/image/todolist.jpg'
 import Fade from 'react-reveal/Fade';
 
 
