@@ -1,5 +1,5 @@
 import React from "react";
-import style from './Main.module.scss'
+import './Main.scss'
 import styleContainer from '../common/styles/Container.module.css'
 import avatarImage from '../assets/image/photo.jpg'
 import Particles from "react-tsparticles";
@@ -12,9 +12,9 @@ export const Main = () => {
         backgroundImage: `url(${avatarImage})`
     }
     return (
-        <div id = 'main' className={style.mainBlock}>
+        <div id = 'main' className={'mainBlock'}>
             <Particles
-                className={style.particles}
+                className={'particles'}
                 options={{
                     fpsLimit: 120,
                     interactivity: {
@@ -45,6 +45,7 @@ export const Main = () => {
                             },
                         },
                     },
+                    className: 'fff',
                     particles: {
                         color: {
                             value: "#ffffff",
@@ -58,6 +59,9 @@ export const Main = () => {
                         },
                         collisions: {
                             enable: true,
+                        },
+                        style: {
+                            display: 'none'
                         },
                         move: {
                             direction: "none",
@@ -91,13 +95,13 @@ export const Main = () => {
             <Fade top>
                 <div className={styleContainer.container}>
 
-                    <div className={style.text}>
-                        <span className={`${style.description} ${style.primaryText}`}>HELLO! I AM</span>
-                        <h1 className={style.textName}>DYATLOV IVAN</h1>
-                        <ReactTypingEffect className={style.description} text='Frontend Developer.'/>
+                    <div className={'text'}>
+                        <span className={'description primaryText'}>HELLO! I AM</span>
+                        <h1 className={'textName'}>DYATLOV IVAN</h1>
+                        <ReactTypingEffect className={'description'} text='Frontend Developer.'/>
                     </div>
                     <Tilt option={{max: 25}}>
-                        <div className={style.photo} style={avatar}/>
+                        <div className={'photo'} style={avatar}/>
                     </Tilt>
                 </div>
             </Fade>
