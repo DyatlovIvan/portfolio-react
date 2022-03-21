@@ -30,6 +30,7 @@ export const Skills = () => {
     const TSImg = {
         backgroundImage: `url(${TSLogo})`,
     }
+        //test
     return (
         <div  id = 'skills' className={style.skillsBlock}>
             <div className={`${styleContainer.container} ${style.skillsContainer}`}>
